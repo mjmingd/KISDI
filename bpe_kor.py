@@ -4,8 +4,6 @@ import re
 import os
 import sys
 from collections import Counter, defaultdict
-import easydict
-import codecs
 import copy
 
 
