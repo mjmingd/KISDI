@@ -1,6 +1,9 @@
 # KISDI
 
-## BPE(Bite Pair Encoding)
+## BPE(Byte Pair Encoding)
+
+This code modifies [paper](https://www.aclweb.org/anthology/P16-1162)'s code <https://github.com/rsennrich/subword-nmt>
+
 
 For single file
 
