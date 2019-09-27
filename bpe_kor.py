@@ -23,26 +23,6 @@ def text_standardize(text):
     return text.strip()
 
 
-
-def load_moviedataset(dataset_path):
-    """ Output a list of tuples(제목, 시놉시스, 기자 댓글, 댓글, label) """
-    with open(dataset_path, encoding='UTF8') as f :
-        file = json.load(f)
-        output = list()
-        for id in file :
-            data = file[id]
-            output.append(data['movieNm'])
-            output.append(text_standardize(data['synopsis']))
-            if data['reporters'] != [] :
-                for r in data['reporters'] :
-                      output.append(text_standardize(r['text']))
-            if data['comments'] != [] :
-                for c in data['comments'] :
-                    output.append(text_standardize(c['text']))
-    return output
-
-
-
 def get_vocabulary(fobj):
     """Read text and return dictionary that encodes vocabulary
     """
